@@ -322,6 +322,22 @@ local plugins = {
     end
   },
   ["christoomey/vim-tmux-navigator"] = {},
+  ["tversteeg/registers.nvim"] = {
+    config = function()
+      require "registers".setup {}
+    end,
+  },
+  ["chentoast/marks.nvim"] = {
+    config = function()
+      require "marks".setup({
+        mappings = {
+          -- preview = "mp"
+          next = "mn",
+          prev = "mN"
+        },
+      })
+    end
+  },
 }
 
 return plugins
