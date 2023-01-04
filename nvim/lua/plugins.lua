@@ -338,6 +338,11 @@ local plugins = {
       })
     end
   },
+  ["declancm/windex.nvim"] = {
+    config = function()
+      require("windex").setup()
+    end
+  },
 }
 
 return plugins
