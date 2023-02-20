@@ -343,6 +343,10 @@ local plugins = {
       require("windex").setup()
     end
   },
+  ["mustache/vim-mustache-handlebars"] = {},
+  ["sindrets/diffview.nvim"] = {
+    requires = "nvim-lua/plenary.nvim"
+  },  
 }
 
 return plugins
